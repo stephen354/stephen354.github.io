@@ -101,7 +101,8 @@ body {
 .info h2,
 .story h2,
 .gallery h2,
-.rsvp h2 {
+.rsvp h2,
+.gifts h2 {
   color: var(--pink);
   font-family: "Sacramento";
   font-size: 5rem;
@@ -189,13 +190,15 @@ body {
 }
 .story,
 .gallery,
-.rsvp {
+.rsvp,
+.gifts {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
 
 .story span,
-.gallery span {
+.gallery span,
+.gifts span {
   text-transform: uppercase;
   color: #666;
   font-size: 0.9rem;
@@ -206,7 +209,8 @@ body {
 
 .story p,
 .gallery p,
-.rsvp p {
+.rsvp p,
+.gifts p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -334,6 +338,27 @@ body {
   border: 1px solid var(--pink);
 }
 
+footer {
+  padding: 3rem;
+  background-color: var(--pink);
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
 /* Media Query */
 /* Extra Large */
 @media (max-width: 1200px) {
@@ -410,18 +435,21 @@ body {
     font-size: 60%;
   }
   .simply-countdown > .simply-section {
-    padding: 45px;
+    padding: 40px;
     margin: 3px;
   }
 
   .timeline li .timeline-image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   .timeline li .timeline-panel {
-    width: 65%;
+    width: 60%;
     transform: translateX(-20px);
+  }
+  .sticky-top {
+    overflow: hidden;
   }
 
   .timeline li .timeline-panel::before {
@@ -429,5 +457,9 @@ body {
   }
   .timeline li .timeline-panel::after {
     top: 30px;
+  }
+  .rsvp {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
