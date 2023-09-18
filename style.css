@@ -8,6 +8,7 @@ body {
   font-size: 1rem;
   font-family: "Work Sans", sans-serif;
   min-height: 4000px;
+  overflow-x: hidden;
 }
 
 .hero::before {
@@ -23,6 +24,8 @@ body {
   background-size: cover;
   background-position: center;
   filter: grayscale();
+  display: table;
+  background-attachment: fixed;
 }
 
 .hero {
@@ -339,7 +342,7 @@ body {
 }
 
 footer {
-  padding: 3rem;
+  padding: 2rem;
   background-color: var(--pink);
   color: white;
 }
