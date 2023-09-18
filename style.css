@@ -92,7 +92,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
-  margin-top: -4.65rem;
+  /* margin-top: -4.65rem; */
   padding-top: 15rem;
   padding-bottom: 10rem;
 }
@@ -359,6 +359,35 @@ footer li {
   display: inline;
   margin: 0.5rem;
 }
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Media Query */
 /* Extra Large */
 @media (max-width: 1200px) {
@@ -461,8 +490,5 @@ footer li {
   .rsvp {
     padding-right: 20px;
     padding-left: 20px;
-  }
-  .mynavbar .offcanvas {
-    height: 0;
   }
 }
