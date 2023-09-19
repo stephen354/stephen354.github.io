@@ -24,7 +24,7 @@
     />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- AOS -->
@@ -35,13 +35,19 @@
   <body>
     <section
       id="hero"
-      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+      class="hero w-100 h-100 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
         <h4>Kepada <span>Bapak/Ibu/Saudara/i,</span></h4>
-        <h1>Stephen & Cheryl</h1>
+        <h1 class="justify-content-center align-items-center text-center">
+          <ul>
+            <li>Stephen</li>
+            <li style="font-size: 20px">-&-</li>
+            <li>Cheryl</li>
+          </ul>
+        </h1>
         <p>Akan Melangsungkan resepsi pernikahan dalam:</p>
-        <div class="simply-countdown d-flex"></div>
+        <div class="simply-countdown d-flex justify-content-center"></div>
         <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
           >Lihat Undangan</a
         >
@@ -110,13 +116,13 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-8 text-end">
-                <h3 data-aos="fade-up-right">Stephen</h3>
-                <p data-aos="fade-up-right">
+                <h3 data-aos="fade-up">Stephen</h3>
+                <p data-aos="fade-up">
                   Pernikahan adalah ibadah, dan setiap ibadah bermuara pada
                   cinta-Nya sebagai tujuan. Sudah sewajarnya setiap upaya meraih
                   cinta-Nya dilakukan dengan sukacita.
                 </p>
-                <p data-aos="fade-up-right">
+                <p data-aos="fade-up">
                   Putra dari Bpk. Tri <br />
                   dan <br />
                   Ibu Heni
@@ -127,7 +133,7 @@
                   src="https://picsum.photos/400/400"
                   alt="Wahyu"
                   class="img-responsive rounded-circle"
-                  data-aos="fade-up-right"
+                  data-aos="fade-up"
                 />
               </div>
             </div>
@@ -144,18 +150,18 @@
                   src="https://picsum.photos/seed/picsum/400/400"
                   alt="Indri"
                   class="img-responsive rounded-circle"
-                  data-aos="fade-up-left"
+                  data-aos="fade-up"
                 />
               </div>
               <div class="col-8">
-                <h3 data-aos="fade-up-left">Cheryl</h3>
-                <p data-aos="fade-up-left">
+                <h3 data-aos="fade-up">Cheryl</h3>
+                <p data-aos="fade-up">
                   Setiap kisah cinta itu indah, tapi kisah cinta kita adalah
                   yang terbaik.Ibuku menyuruhku melakukannya pilih yang terbaik,
                   dan saya melakukannya. Kisah cinta sejati tidak pernah
                   memiliki akhiran.
                 </p>
-                <p data-aos="fade-up-left">
+                <p data-aos="fade-up">
                   Putra dari Bpk. Hambali <br />
                   dan <br />
                   Ibu Ari
@@ -346,7 +352,7 @@
         </div>
 
         <div
-          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-2 justify-content-center"
         >
           <div
             class="col mt-3"
@@ -520,7 +526,7 @@
           </div>
         </form>
 
-        <!-- <div class="row justify-content-center align-items-center">
+        <div class="row justify-content-center align-items-center">
           <div class="col-md-6">
             <div id="disqus_thread"></div>
             <script>
@@ -549,7 +555,7 @@
               ></noscript
             >
           </div>
-        </div> -->
+        </div>
       </div>
     </section>
 
@@ -618,7 +624,10 @@
 
     <div id="audio-container">
       <audio id="song" autoplay loop>
-        <source src="audio/Passenger  Let Her Go  Cover.mp3" type="audio/mp3" />
+        <source
+          src="audio/Pink Sweat  At My Worst Official Video.mp3"
+          type="audio/mp3"
+        />
       </audio>
 
       <div class="audio-icon-wrapper">
@@ -717,6 +726,7 @@
       // if (!localStorage.getItem("opened")) {
       //   disableScroll();
       // }
+      song.pause();
       disableScroll();
     </script>
 

@@ -1,5 +1,5 @@
 :root {
-  --pink: #f14e95;
+  --pink: #faa7af;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgba(0 0 0/0.5);
 }
@@ -39,9 +39,12 @@ body {
   text-shadow: var(--shadow);
 }
 
-.hero h1 {
-  font-family: "Sacramento", cursive;
-  font-size: 6rem;
+.hero h1 li {
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  text-decoration: none;
+  list-style: none;
+  margin-left: -10%;
 }
 
 .hero h4 {
@@ -464,10 +467,16 @@ footer li {
 /* mobile phone */
 @media (max-width: 576px) {
   html {
-    font-size: 60%;
+    font-size: 65%;
+  }
+  .mynavbar {
+    margin-left: -50%;
+  }
+  .home {
+    background-size: 250%;
   }
   .simply-countdown > .simply-section {
-    padding: 40px;
+    padding: 35px;
     margin: 3px;
   }
 
@@ -479,9 +488,6 @@ footer li {
   .timeline li .timeline-panel {
     width: 60%;
     transform: translateX(-20px);
-  }
-  .sticky-top {
-    overflow: hidden;
   }
 
   .timeline li .timeline-panel::before {
