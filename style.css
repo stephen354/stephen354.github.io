@@ -1,5 +1,5 @@
 :root {
-  --pink: #faa7af;
+  --pink: #f58b96;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgba(0 0 0/0.5);
 }
@@ -8,7 +8,6 @@ body {
   font-size: 1rem;
   font-family: "Work Sans", sans-serif;
   min-height: 4000px;
-  overflow-x: hidden;
 }
 
 .hero::before {
@@ -25,12 +24,13 @@ body {
   background-position: center;
   filter: grayscale();
   display: table;
-  background-attachment: fixed;
 }
 
 .hero {
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .hero h1,
@@ -45,6 +45,9 @@ body {
   text-decoration: none;
   list-style: none;
   margin-left: -10%;
+}
+.hero a {
+  font-size: 30px;
 }
 
 .hero h4 {
@@ -103,6 +106,21 @@ body {
   padding-bottom: 10rem;
 }
 
+@keyframes zoomright {
+  0% {
+    width: 100%;
+    height: 175px;
+  }
+  50% {
+    margin-right: -10%;
+    width: 120%;
+    height: 185px;
+  }
+  100% {
+    width: 100%;
+    height: 175px;
+  }
+}
 .home h2,
 .info h2,
 .story h2,
@@ -499,5 +517,70 @@ footer li {
   .rsvp {
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .hero h4 {
+    box-shadow: var(--shadow);
+    padding: 2rem;
+  }
+
+  /* FLOWER */
+
+  .hero ul::before {
+    content: "";
+    position: absolute;
+    top: -11%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background-image: url("img/flower180.png");
+    background-size: cover;
+    background-position: center;
+    animation: zoom 4s linear infinite;
+    animation-direction: reverse;
+    transform-origin: center;
+  }
+
+  .hero ul::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background-image: url("img/Pink-Flowers-PNG-Download-Image.png");
+    background-size: cover;
+    background-position: center;
+    animation: zoom 4s linear infinite;
+    animation-direction: reverse;
+    transform-origin: center;
+  }
+  @keyframes zoom {
+    0% {
+      width: 100%;
+      height: 175px;
+    }
+    50% {
+      width: 120%;
+      height: 185px;
+    }
+    100% {
+      width: 100%;
+      height: 175px;
+    }
+  }
+
+  .info .flower,
+  .story .flower,
+  .gallery .flower,
+  .rsvp .flower {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 175px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-190px);
+    background-image: url("img/Pink-Flowers-PNG-Download-Image.png");
+    background-size: cover;
+    background-position: center;
   }
 }
