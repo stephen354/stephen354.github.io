@@ -38,11 +38,34 @@
       class="hero w-100 h-100 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
+        <div class="loading">
+          <div class="myload">
+            <div class="heart-load">
+              <i class="bi bi-envelope-paper-heart"></i>
+            </div>
+            <div class="load"></div>
+            <div class="loader"></div>
+          </div>
+        </div>
+
+        <script>
+          const loading = document.querySelector(".loading");
+          function load() {
+            loading.style.display = "none";
+          }
+          function flip() {
+            document.querySelector(".myload").style.display = "none";
+            loading.style.animation = "1s flips";
+          }
+          setTimeout(flip, 10000);
+          setTimeout(load, 11000);
+        </script>
+
         <h1 class="justify-content-center align-items-center text-center">
           <ul>
             <li>Stephen</li>
             <li style="font-size: 20px">-&-</li>
-            <li>Cheryl</li>
+            <li>Yunisa</li>
           </ul>
         </h1>
         <p>Akan Melangsungkan resepsi pernikahan dalam:</p>
@@ -136,7 +159,7 @@
           <div class="col-md-8 text-center">
             <h2 data-aos="fade-up">Acara Pernikahan</h2>
             <h3 data-aos="fade-up">
-              Diselenggarakan pada 20 November 2023 di Malang, Jawa Timur
+              Diselenggarakan pada 06 Juli 2024 di Malang, Jawa Timur
             </h3>
             <p data-aos="fade-up">
               Oleh karena itu, dengan segala hormat, kami bermaksud untuk
@@ -188,7 +211,7 @@
                 />
               </div>
               <div class="col-8">
-                <h3 data-aos="fade-up">Cheryl</h3>
+                <h3 data-aos="fade-up">Yunisa</h3>
                 <p data-aos="fade-up">
                   Setiap kisah cinta itu indah, tapi kisah cinta kita adalah
                   yang terbaik.Ibuku menyuruhku melakukannya pilih yang terbaik,
@@ -256,7 +279,7 @@
                   </div>
                   <div class="col-md-6">
                     <i class="bi bi-calendar3 d-block"></i>
-                    <span>Minggu , 20 November 2023</span>
+                    <span>Minggu , 06 Juli 2024</span>
                   </div>
                 </div>
               </div>
@@ -277,7 +300,7 @@
                   </div>
                   <div class="col-md-6">
                     <i class="bi bi-calendar3 d-block"></i>
-                    <span>Minggu , 20 November 2023</span>
+                    <span>Minggu , 06 Juli 2024</span>
                   </div>
                 </div>
               </div>
@@ -566,7 +589,7 @@
 
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6">
-            <div id="disqus_thread"></div>
+            <!-- <div id="disqus_thread"></div>
             <script>
               /**
                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -591,7 +614,7 @@
               <a href="https://disqus.com/?ref_noscript"
                 >comments powered by Disqus.</a
               ></noscript
-            >
+            > -->
           </div>
         </div>
       </div>
@@ -631,16 +654,18 @@
         <div class="row">
           <div class="col text-center">
             <small class="block"
-              >&copy; 2023 Yumi Wedding. All Rights Reserved.</small
+              >&copy; 2023 My Wedding. All Rights Reserved.</small
             >
             <small class="block"
               >Design by
               <a href="https://instagram.com/stephen_mai45">@stephen_mai45</a
               >.</small
             >
-            <ul class="mt-3">
+            <ul class="mt-3 mb-5">
               <li>
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com/stephen_mai45"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </li>
               <li>
                 <a href="#"><i class="bi bi-youtube"></i></a>
@@ -689,9 +714,9 @@
 
     <script>
       simplyCountdown(".simply-countdown", {
-        year: 2023, // required
-        month: 11, // required
-        day: 20, // required
+        year: 2024, // required
+        month: 7, // required
+        day: 6, // required
         hours: 8, // Default is 0 [0-23] integer
         words: {
           //words displayed into the countdown
